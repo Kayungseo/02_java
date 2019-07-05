@@ -25,5 +25,4 @@ public class TypeCastingTest {
 		System.out.println("int result=" + result);
 		System.out.println("byte buffer=" + buffer);
 	}
-
 }
