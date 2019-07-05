@@ -20,5 +20,8 @@ public class Hello {
 		//소스 편집 후 항상 저장하는 습관
 		//ctrl + s 단축키로 항상 저장 
 		
+		//add -> staged change
+		//before add -> unstaged changes 
+		//
 	}
 }

@@ -3,8 +3,6 @@ package type.primitive;
 /*
  * 논리 타입인 boolean 타입을 선언하고 
  * 테스트하는 클래스 
- * 
- * 
  */
 public class BooleanTest {
 
@@ -19,11 +17,12 @@ public class BooleanTest {
 		isLikeBaseball = false;
 		isExists = true;
 		isHave = true;
+		
+		// 3. 사용
 		System.out.println("isLikeBaseball=" + isLikeBaseball);
 		System.out.println("isExists=" + isExists);
 		System.out.println("isHave=" + isHave);
 		System.out.println("isEnd=" + isEnd);
-		
 	}
 
 }
