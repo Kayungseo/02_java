@@ -35,6 +35,4 @@ public class FindMax {
 			max = x;
 			System.out.println("두 값은 같습니다. ");
 		}
-	}
-
 }

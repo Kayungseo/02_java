@@ -23,6 +23,7 @@ public class MultiplieOfTwo {
 	public static void main(String[] args) {
 		//1. 선언
 		int input;
+		int mod;
 		String result;
 		Scanner scan;
 		
@@ -32,7 +33,10 @@ public class MultiplieOfTwo {
 		input = scan.nextInt();
 		
 		//3. 사용
-		if(input%2==0) {
+		//입력값이 0인 경우 : "0은 배수 판별을 할 수 없습니다."
+		if ( input == 0 ) {
+			System.out.println("0은 배수 판별을 할 수 없습니다.");
+		} else if(input%2==0) {
 			result = "배수입니다.";
 			System.out.printf("입력값 %d은(는) 2의 %s%n ", input, result);
 		} else {
@@ -40,13 +44,14 @@ public class MultiplieOfTwo {
 			System.out.printf("입력값 %d은(는) 2의 %s%n", input, result);
 		}
 		//3-2. 사용 
+		mod = input % 2;
 		if(input%2==0) {
 			result = "배수입니다.";
 			System.out.printf("입력값 %d은(는) 2의 %s%n", input, result);
 		} else {
 			result="배수가 아닙니다.";
 			System.out.printf("입력값 %d은(는) 2의 %s%n", input, result);
-			System.out.println("나머지가 1입니다. ");
+			System.out.printf("나머지가 %d입니다. ", mod);
 		}
 		
 	}
