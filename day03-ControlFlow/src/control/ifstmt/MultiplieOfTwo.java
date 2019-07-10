@@ -34,25 +34,38 @@ public class MultiplieOfTwo {
 		
 		//3. 사용
 		//입력값이 0인 경우 : "0은 배수 판별을 할 수 없습니다."
-		if ( input == 0 ) {
-			System.out.println("0은 배수 판별을 할 수 없습니다.");
-		} else if(input%2==0) {
-			result = "배수입니다.";
-			System.out.printf("입력값 %d은(는) 2의 %s%n ", input, result);
+//		if ( input == 0 ) {
+//			System.out.println("0은 배수 판별을 할 수 없습니다.");
+//		}else	if(input%2==0) {
+//			result = "배수입니다.";
+//			System.out.printf("입력값 %d은(는) 2의 %s%n ", input, result);
+//		} else {
+//			result="배수가 아닙니다.";
+//			System.out.printf("입력값 %d은(는) 2의 %s%n", input, result);
+//		}
+		
+		if (input == 0) {
+			System.out.println("0은 배수판별 할 수 없다.");
 		} else {
-			result="배수가 아닙니다.";
-			System.out.printf("입력값 %d은(는) 2의 %s%n", input, result);
+			if(input%2==0) {
+				result = "배수입니다.";
+				System.out.printf("입력값 %d은(는) 2의 %s%n ", input, result);
+			} else {
+				result="배수가 아닙니다.";
+				System.out.printf("입력값 %d은(는) 2의 %s%n", input, result);
+			}
 		}
+			
 		//3-2. 사용 
-		mod = input % 2;
-		if(input%2==0) {
-			result = "배수입니다.";
-			System.out.printf("입력값 %d은(는) 2의 %s%n", input, result);
-		} else {
-			result="배수가 아닙니다.";
-			System.out.printf("입력값 %d은(는) 2의 %s%n", input, result);
-			System.out.printf("나머지가 %d입니다. ", mod);
-		}
+//		mod = input % 2;
+//		if(input%2==0) {
+//			result = "배수입니다.";
+//			System.out.printf("입력값 %d은(는) 2의 %s%n", input, result);
+//		} else {
+//			result="배수가 아닙니다.";
+//			System.out.printf("입력값 %d은(는) 2의 %s%n", input, result);
+//			System.out.printf("나머지가 %d입니다. ", mod);
+//		}
 		
 	}
 
