@@ -1,9 +1,11 @@
 package control.loop;
+
 /*
  * 0~10까지 출력하는 클래스 
  * 
  * for 구문을 사용해서 출력 
  */
+
 public class PrintToTenByFor {
 	public static void main(String[] args) {
 		
@@ -11,7 +13,7 @@ public class PrintToTenByFor {
 		//     문장들;
 		//}
 		// 1. 선언식 : 선언의 형태 => 타입 변수이름;
-		// 2. 조건식 : 조건의 형태 => 비교연산자(괸계, 동일) 사용한 식
+		// 2. 조건식 : 조건의 형태 => 비교연산자(관계, 동일) 사용한 식
 		//											연산의 결과가 true or false로 얻어짐
 		// 3. 증감식 : 증감연산자(++, --)를 활용하여 
 		//					선언식에서 선언된 루프제어 변수 값을 변경
@@ -28,8 +30,8 @@ public class PrintToTenByFor {
 			System.out.printf("idx=%2d%n", idx);
 		}
 		
-		for(int i = 0; i <10; i++) {
-			System.out.println("i+" + i);
+		for(int i = 1; i <=10; i++) {
+			System.out.println("i=" + i);
 		}
 		System.out.println("---------------------------------------------------");
 		System.out.println("---10에서 1까지 역순 출력 ");

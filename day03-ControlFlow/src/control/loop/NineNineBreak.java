@@ -25,8 +25,9 @@ public class NineNineBreak {
 				System.out.printf("%d x %d = %2d%n", stage, times, (stage * times));
 			} // end inner for
 		} // end outer for
+		
 		System.out.println("--------------------------------------------------------------");
-		System.out.println("---레이블과 함께쓰는 brea---");
+		System.out.println("---레이블과 함께쓰는 break---");
 		OUT: for (int stage = 2; stage < 10; stage++) {
 
 			// 단의 제목 출력
@@ -41,5 +42,4 @@ public class NineNineBreak {
 			} // end inner for
 		} // end outer for
 	}
-
 }

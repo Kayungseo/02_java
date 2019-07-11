@@ -7,19 +7,22 @@ public class WhileTest {
 		int idx = 50;
 
 		while (idx > 0) {
-			System.out.printf("%d\t", idx);
-			idx -= 2;
+			if ( idx % 2 != 0) {
+				;
+			}
+			else {
+				System.out.printf("%d%n", idx);
+			}
+			idx--;
 		}
 		System.out.println();
 
 		idx = 50;
 		while (idx > 0) {
 			if (idx % 2 != 0) {
-				idx--;
 				continue;
 			}
 			System.out.printf("%d\t", idx);
-			idx--;
 		}
 
 		System.out.println();
