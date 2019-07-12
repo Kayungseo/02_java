@@ -41,5 +41,4 @@ public class MultiTypeArrayInit {
 			System.out.printf("name=%s%n", name);
 		}
 	}
-
 }

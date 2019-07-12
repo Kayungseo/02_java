@@ -20,6 +20,7 @@ public class WhileTest {
 		idx = 50;
 		while (idx > 0) {
 			if (idx % 2 != 0) {
+				idx++;
 				continue;
 			}
 			System.out.printf("%d\t", idx);

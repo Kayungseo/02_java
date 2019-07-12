@@ -14,8 +14,13 @@ package control.loop;
 public class ForTest {
 
 	public static void main(String[] args) { 
-		for(int idx = 50; idx >= 0; idx -= 2) {
-			System.out.printf("%d\t", idx);
+		for(int idx = 50; idx >= 0; idx--) {
+			if(idx % 2 != 0) {
+				;
+			} else {
+				System.out.printf("%d\t", idx);
+			}
+		
 		}
 		
 		System.out.println();
@@ -38,6 +43,4 @@ public class ForTest {
 			System.out.printf("%2d x %2d = %3d%n",  num, num, num *num);
 		}
 	}
-	
-
 }
