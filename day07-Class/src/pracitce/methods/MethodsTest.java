@@ -22,14 +22,13 @@ public class MethodsTest {
 		int[] arr = {4, 5};
 		methods.printNineNineTableArray(arr);//{4, 5} 바로 넣을 수 없다.
 		//
-		String bmiResult = methods.calcBMI(1.58, 56);
-		System.out.println("BMI 판정결과 = " + bmiResult);
+		
+		System.out.println("BMI 판정결과 = " + methods.calcBMI(1.58, 56));
 		//
-		int minOfTwo = methods.min(5, 9);
-		System.out.println("min = "+ minOfTwo);
+		System.out.println("min = "+ methods.min(5, 9));
 		//
-		int maxOfTwo = methods.max(9, 8);
-		System.out.printf("max = %d%n", maxOfTwo);
+		
+		System.out.printf("max = %d%n", methods.max(9, 8));
 		//
 		int[] intsForSum = new int[3];
 		intsForSum[0] = 9;
