@@ -27,19 +27,20 @@ public class MethodsTest {
 		//
 		System.out.println("min = "+ methods.min(5, 9));
 		//
-		
 		System.out.printf("max = %d%n", methods.max(9, 8));
 		//
 		int[] intsForSum = new int[3];
 		intsForSum[0] = 9;
 		intsForSum[1] = 8;
 		
-		int sumOfNums = methods.sumOfArray(intsForSum);
-		System.out.printf("sumOfNums = %d%n", sumOfNums);
-		//
-		int[] intsForAvg = {6, 4, 7};
-		double avgOfNums = methods.avgOfArray(intsForAvg);
-		System.out.printf("avgOfnums = %.2f%n", avgOfNums);
+		System.out.printf("sumOfNums = %d%n", methods.sumOfArray(intsForSum));
+		//배열의 평균 계산 메소드 테스트 
+		//1. 매개변수로 넘길 변수 선언 
+		int[] ages = {12, 15, 10, 18, 17};
+		//2. 테스트할 메소드 call하며 1의 배열 전달 
+		double avgOfAges = methods.avgOfArray(ages);
+		//3. 평균이 저장된 변수를 출력
+		System.out.printf("avgOfnums = %.2f%n", methods.avgOfArray(avgOfAges));
 		//
 		methods.adder('+', 10, 20);
 	}
