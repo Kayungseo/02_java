@@ -78,7 +78,23 @@ public class Book {
 			this(sequence, isbn, title);
 			setAuthor(author);
 		}
-	
+		Book(int sequence, String isbn, String title, String author, String company){
+			this(sequence, isbn, title, author);
+			setCompany(company);
+		}
+		Book(int sequence, String isbn, String title, String author, String company, int totalPage){
+			this(sequence, isbn, title, author, company);
+			setTotalPage(totalPage);
+		}
+		Book(int sequence, String isbn, String title, String author, String company, int totalPage, int price) {
+			this(sequence, isbn, title, author, company, totalPage);
+			setPrice(price);
+		}
+		Book(int sequence, String isbn, String title, String author, String company, int totalPage, int price, int quantity) {
+			this(sequence, isbn, title, author, company, totalPage, price);
+			setQuantity(quantity);
+		}
+		
 	//sequence 멤버 변수의 getter 
 	public int getSequence() {
 		return sequence;

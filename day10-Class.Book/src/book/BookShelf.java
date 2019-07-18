@@ -127,8 +127,12 @@ public class BookShelf {
 	}
 	
 	// 전체 책 목록을 얻기
-	public Book[] getBooks(Book[] books) {
-		return books;
+	public Book[] getAllBooks() {
+		for(Book book : this.books) {
+			System.out.printf("%d, %s, %s, %s, %s, %d, %d, %d%n", book.sequence, book.isbn, book.title, book.author, book.company, book.company 
+					, book.totalPage, book.price, book.quantity);
+		}
+		return this.books;
 	}
 	
 	// 접근자
