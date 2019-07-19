@@ -44,6 +44,15 @@ public class BookStoreTest {
 		for (Book book : allBooks) {
 			book.print();
 		}
+		
+		//4. 채식주의자 가격 할인 set
+		
+		//5. 채식주의 가격 할인 적용 결과 확인 get
+		
+		//6. 책은 도끼다 폐기 remove
+		
+		//7. 페기 확인을 위해 전체 목록 재 조회 getAllBooks
+		
 	}
 
 }

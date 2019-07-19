@@ -157,6 +157,10 @@ public class Book {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+	public void print() {
+		String message = "책 정보[일련번호 : %d, ISBN : %s, 저자 : %s, 출판사 : %s,  페이지 : %d, 가격 : %d, 재고 : %d]%n";
+		System.out.printf(message, sequence, isbn, author, company, totalPage, price, quantity);
+	}
 	
 
 }
