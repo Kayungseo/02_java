@@ -41,7 +41,7 @@ public class BookManager {
 	// (1) 매니저는 책 한권을 책장에 가져가서 
     // 	 새로 꽂을 수 있다.
 	public void add(Book book) {
-		this,bookShelf.add(book);
+		this.bookShelf.add(book);
 	}
 	// (2) 매니저는 책장에 가서 더 이상 팔지 않을 
 	//		  폐기할 책을 제거할 수 있다.

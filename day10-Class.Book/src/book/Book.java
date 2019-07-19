@@ -46,7 +46,7 @@ package book;
  *  get으로 시작하지 않고 is로 시작한다. 
  *  
  * @author Administrator
- *
+ * 
  */
 public class Book {
 	//1. 멤버변수
