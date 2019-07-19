@@ -61,13 +61,13 @@ public class BookShelf {
 			// 4. 폐기할 인덱스가 배열 중간일 때
 		    //  (1) 삭제할 책 앞쪽의 책정보는 같은 인덱스로 복사
 		    //  (2) 삭제할 책 뒤쪽의 남는 책정보는 현재 인덱스 - 1 위치로 복사
-			if (index < newBooks.length - 1) {
+			if (index < books.length - 1) {//==<이 값의 범위 0 <= index < length -1 
 				for(int idx = 0;idx < index; idx++) {
 					newBooks[idx] = books[idx];
 				}
 				
-				for(int idx = index + 1;idx < books.length; idx++) {
-					newBooks[idx-1]=books[idx];
+				for(int idx = index;idx < newBooks.length; idx++) {
+					newBooks[idx]=books[idx + 1];
 				}
 			} else {
 				for(int idx = 0; idx <books.length - 1;idx++) {
@@ -80,7 +80,7 @@ public class BookShelf {
 			// 6. 남는 책이 복사된 새 배열을
 			//    this.book 에 새로 저장
 			this.books = newBooks;
-		}
+		}//end outer if
 	}
 	
 	// 책 정보 수정 : void : set(Book book)
@@ -102,6 +102,13 @@ public class BookShelf {
 		return findBook(book);
 	}
 	
+	 /**
+	  * 매개변수 전달된 책 정보와 
+	  * 일치하는 일련번호를 가진 책 (책 배열 : books에 있는)을 
+	  * 찾아서 배열 안에 들어있는 책을 리턴 
+	  * @param book
+	  * @return
+	  */
 	private Book findBook(Book book) {
 		Book findBook = null;
 		for (int idx = 0; idx < books.length; idx++) {
@@ -111,11 +118,13 @@ public class BookShelf {
 				break;
 			}
 		}
-		return findBook;
+		return findBook;//book과는 sequence는 같지만('나무'라는 이름은 같지만)  인스턴스가 다름
 	}
 	
 	private int findBookIndex(Book book) {
-		int index = -1;
+		int index = -1;//배열에는 -1 인덱스가 없다
+		//리턴받을때 -1이 나오면 못찾았다는 의미
+		//내가 -1의 의미를 정의 
 		for (int idx = 0; idx < books.length; idx++) {
 			if (books[idx].getSequence() == book.getSequence()) {
 				// 같은 책 찾았다.
@@ -123,15 +132,11 @@ public class BookShelf {
 				break;
 			}
 		}
-		return index;
+		return index;//책을 찾을 수 있는 위치를 알려줌 
 	}
 	
-	// 전체 책 목록을 얻기
+	// 전체 책 목록을 얻기 : getAllBooks()
 	public Book[] getAllBooks() {
-		for(Book book : this.books) {
-			System.out.printf("%d, %s, %s, %s, %s, %d, %d, %d%n", book.sequence, book.isbn, book.title, book.author, book.company, book.company 
-					, book.totalPage, book.price, book.quantity);
-		}
 		return this.books;
 	}
 	
@@ -144,5 +149,4 @@ public class BookShelf {
 	public void setBooks(Book[] books) {
 		this.books = books;
 	}
-	
 }
