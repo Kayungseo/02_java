@@ -26,6 +26,7 @@ public class Oreo {
 	String cream;
 	double radius;
 	double thickness;
+	int seq;
 	
 	//2. 생성자 중복정의 
 	Oreo(){
@@ -57,5 +58,35 @@ public class Oreo {
 	}
 	
 	//TODO 접근자, 수정자 추가 
+	public String getCream(){
+		return this.cream;
+	}	
 	
+	public void setCream(String cream) {
+		this.cream = cream;
+	}
+	
+	public double getRadius() {
+		return this.radius;
+	}
+	
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+	
+	public double getThickness() {
+		return this.thickness;
+	}
+	
+	public void setThickness(double thickness) {
+		this.thickness = thickness;
+	}
+	
+	public int getSeq() {
+		return this.seq;
+	}
+	
+	public void setSeq(int seq) {
+		this.seq = seq;
+	}
 }
