@@ -31,20 +31,25 @@ public class Oreo {
 	//2. 생성자 중복정의 
 	Oreo(){
 		
-	}// 기본 생성자 필수적으로 명시 
+	}// 기본 생성자 필수적으로 명시
 	
-	Oreo(String cream) {
-		this();//기본 생성자 호출 
+	Oreo(int seq) {
+		this();
+		this.seq = seq;
+	}
+
+	Oreo(int seq, String cream) {
+		this(seq);//기본 생성자 호출 
 		this.cream = cream; 
 	}
 	
-	Oreo(String cream, double radius) {
-		this(cream);
+	Oreo(int seq, String cream, double radius) {
+		this(seq, cream);
 		this.radius = radius;
 	}
 	
-	Oreo(String cream, double radius, double thickness) {
-		this(cream, radius);
+	Oreo(int seq, String cream, double radius, double thickness) {
+		this(seq, cream, radius);
 		this.thickness = thickness;
 	}
 	
