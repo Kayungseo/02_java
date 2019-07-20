@@ -64,10 +64,14 @@ public class OreoBox {
 		int index = -1;
 		for ( int idx = 0;idx < oreos.length;idx++) {
 			if (oreos[idx].seq == oreo.getSeq()) {
-				return oreos[idx];
+				return this.oreos[idx];
 			}	
 		}
 	}
-	public 
+	
+	public Oreo[] getAllOreos() {
+		return this.oreos;
+	}
+
 	
 }
