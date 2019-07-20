@@ -21,7 +21,8 @@ public class OreoTest {
 
 	public static void main(String[] args) {
 		// 1. 선언, 2. 초기화
-		Oreo[] oreos = new Oreo[0];
+		oreo[] oreos = new Oreo[0];
+		
 		
 		OreoBox box = new OreoBox(oreos);
 		
@@ -41,7 +42,7 @@ public class OreoTest {
 		}
 		
 		// 초코 쿠키 (1번 쿠키)를 바닐라로 변경 : set
-		
+		box.set(1, "바닐라");
 		
 		// 변경된 초코쿠키 (1번 쿠키) :get
 		
