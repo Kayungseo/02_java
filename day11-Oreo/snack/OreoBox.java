@@ -28,15 +28,45 @@ public class OreoBox {
 	}
 	
 	public void remove(Oreo oreo) {
-		
+		int index = -1;
+		for (int idx = 0; idx < oreos.length; idx++) {
+			if(oreos[idx].seq == getseq(oreo) {
+				index = idx;
+				break;
+		}
+		if(index > -1) {
+			Oreo[] newOreos = new Oreo[oreos.length - 1];
+			if(index < Oreos.lenth - 1) {
+				for(int idx = 0;idx < index;idx++) {
+					newOreos[idx] = Oreos[idx];
+				}
+				
+				for(int idx = index; idx < newOreos.length; idx++) {
+					newOreos[idx] = Oreos[idx +1];
+				}
+			} else {
+				for(int idx = 0; idx < Oreos.length - 1; idx++) {
+					newOreos[idx] = Oreos[idx];
+			}
+		}
 	}
 	
 	public void set(Oreo oreo) {
-		
+		int index = -1;
+		for ( int idx = 0;idx < oreos.length;idx++) {
+			if (oreos[idx].seq == oreo.getSeq()) {
+				this.oreos[idx] = oreo;
+			}	
+		}
 	}
 	
 	public void get(Oreo oreo) {
-		
+		int index = -1;
+		for ( int idx = 0;idx < oreos.length;idx++) {
+			if (oreos[idx].seq == oreo.getSeq()) {
+				return oreos[idx];
+			}	
+		}
 	}
 	public 
 	
