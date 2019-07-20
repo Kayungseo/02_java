@@ -10,7 +10,11 @@ package snack;
 public class OreoBox {
 	// TODO Oreo를 여러개 저장할 수 있는 
 	// Oreo[] oreos 를 멤버 변수로 갖도록 선언
-	Oreo[] oreos = new Oreo[0];
+	Oreo[] oreos;
+	
+	OreoBox(Oreo[] oeos) {
+		this.oreos = new Oreo[0];
+	}
 	
 	//TODO 오레오 박스에 
 	// 오레오 쿠키를 1개씩 추가, 삭제, 수정, 꺼내
