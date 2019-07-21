@@ -12,7 +12,8 @@ public class OreoBox {
 	// Oreo[] oreos 를 멤버 변수로 갖도록 선언
 	Oreo[] oreos;
 	
-	OreoBox(Oreo[] oeos) {
+	//생성자 선언
+	OreoBox(Oreo[] oreos) {
 		this.oreos = new Oreo[0];
 	}
 	
